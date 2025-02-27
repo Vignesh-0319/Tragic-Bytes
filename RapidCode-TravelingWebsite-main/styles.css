@@ -1,0 +1,130 @@
+/* Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background with subtle gradient */
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container with a Glassmorphism Effect */
+.masterContainer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Graphic Section */
+#graphic {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+#graphicImage {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Login Section */
+#LoginArea {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.boxItems {
+    margin-bottom: 15px;
+}
+
+.inputs {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit Button with Animation */
+#submitButton {
+    background: linear-gradient(90deg, #ff8c00, #ff0080);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+#submitButton:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #ff0080, #ff8c00);
+}
+
+/* Signup Link */
+#log-on {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+#log-on a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#log-on a:hover {
+    text-decoration: underline;
+}
